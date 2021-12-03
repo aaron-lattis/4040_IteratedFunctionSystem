@@ -1,0 +1,11 @@
+This program generates an image using an iterated function system. 
+
+To compile the program, type 'make' and then 'make paint'. This will create an executable 'img_paint' file.
+
+To run the program simply type './img_paint'. This program does not require an input image, as the created image content is generated entirly by the IFS. 
+
+When the program is run, it will immediately begin iterations. I currently have it set up to run 10,000,000 iterations, and then display the generated image when these iterations are complete. The size of the generated image is 1920x1080 as specified in the assignment description. 
+
+The image realy starts to look good after about 1,000,000,000 iterations. However, this take about 2 minutes and 45 seconds to be created, so I have set it to a quicker 10,000,000.
+
+If someone wanted to run this program with an input image, they would simply need to un comment lines 86 and 92 and comment out line 94 in img_paint.C and then intialize alpha in imgproc.C to 1. Then provide an input image when runnig the program with -image <image>. 
